@@ -1,0 +1,163 @@
+_type: export
+__export_format: 4
+__export_date: 2022-07-12T03:51:41.112Z
+__export_source: insomnia.desktop.app:v2022.3.0
+resources:
+  - _id: req_ab26be908d124ac8bbe58b08c256a034
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657596607632
+    created: 1657592555273
+    url: http://localhost:5000/users
+    name: Get Users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1657596527132
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    parentId: null
+    modified: 1657592534689
+    created: 1657592534689
+    name: Node Api
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_601d50f0f5864a69a4fedb04f84ae754
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657596657771
+    created: 1657592667896
+    url: http://localhost:5000/users
+    name: Post users
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstName":"Karamaru",
+          "lastName":"Mahoto",
+          "age":18
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_43757f3f74434ca7a8a5747ed0df82da
+    authentication: {}
+    metaSortKey: -1657596527107
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2a9446be69124d368372a78673c2c5e3
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657596599903
+    created: 1657596527082
+    url: http://localhost:5000/users/c0fd8cd1-31aa-439c-b266-9406d5e140f2
+    name: Especific User
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1657596527082
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_de2da5ff851542e798cc6bafaab28c2e
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657596688700
+    created: 1657594906899
+    url: http://localhost:5000/users/5f07afc4-b6d4-4e51-8387-7c59588da1fa
+    name: update users
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "age":26
+
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_2457560e534744d7a277057762b876c0
+    authentication: {}
+    metaSortKey: -1657594906899
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c24ce71d9b7a474da7c4b4d321a990a7
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657596624056
+    created: 1657594506724
+    url: http://localhost:5000/users/8120c80e-5d14-43f3-9e88-dc0b93aadf35
+    name: Delete User
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1657594506724
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_6278ec4255b3be4619fdbb068e3b2ae9e33bf3fb
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657592534699
+    created: 1657592534699
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1657592534699
+    _type: environment
+  - _id: jar_6278ec4255b3be4619fdbb068e3b2ae9e33bf3fb
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657592534701
+    created: 1657592534701
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_51a4ccfc836f4ba79479edf39b1ed922
+    parentId: wrk_c4fd404760e1493cafdd0f90de8cb8b7
+    modified: 1657592534690
+    created: 1657592534690
+    fileName: Node Api
+    contents: ""
+    contentType: yaml
+    _type: api_spec
